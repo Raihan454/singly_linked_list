@@ -25,7 +25,7 @@ namespace single_linked_list
             string nm;
             Console.Write("\nEnter the roll number of the student");
             rollNo = Convert.ToInt32(Console.ReadLine());
-            Console.Write("\nEnter the roll number of the student");
+            Console.Write("\nEnter the roll name of the student");
             nm = Console.ReadLine();
             Node newnode = new Node();
             newnode.rollNumber = rollNo;
@@ -96,9 +96,8 @@ namespace single_linked_list
                 Console.WriteLine("\nThe records in the List are: ");
                 Node currentNode;
                 for (currentNode = START; currentNode != null;
-                    currentNode = currentNode.next) ;
-                Console.WriteLine(currentNode.rollNumber + ""
-                    + currentNode.name + "\n");
+                    currentNode = currentNode.next)
+                Console.WriteLine(currentNode.rollNumber + "" + currentNode.name + "\n");
                 Console.WriteLine();
             }
         }
